@@ -38,9 +38,9 @@ ___TEMPLATE_PARAMETERS___
 
 ___SANDBOXED_JS_FOR_SERVER___
 
-const makeNumber = require('makeNumber');
+var makeNumber = require('makeNumber');
 
-const value = makeNumber(data.inputValue);
+var value = makeNumber(data.inputValue);
 
 if (value < 0) {
   return value * -1;
