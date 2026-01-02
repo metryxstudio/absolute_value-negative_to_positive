@@ -15,7 +15,8 @@ ___INFO___
   "displayName": "Absolute Value - Negative to Positive",
   "description": "Converts negative numbers to positive (absolute value). Useful for handling refund transactions from booking engines that send negative purchase values.",
   "containerContexts": [
-    "SERVER"
+    "SERVER",
+    "WEB"
   ],
   "categories": ["UTILITY"],
   "brand": {
@@ -47,6 +48,25 @@ if (value < 0) {
 }
 
 return value;
+
+
+___SANDBOXED_JS_FOR_WEB_TEMPLATE___
+
+var makeNumber = require('makeNumber');
+
+var value = makeNumber(data.inputValue);
+
+if (value < 0) {
+  return value * -1;
+}
+
+return value;
+
+
+
+___WEB_PERMISSIONS___
+
+[]
 
 
 ___SERVER_PERMISSIONS___

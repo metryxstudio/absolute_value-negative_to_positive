@@ -1,6 +1,6 @@
 # Absolute Value - Negative to Positive
 
-A server-side Google Tag Manager variable template that converts negative numbers to positive (absolute value). Useful for handling refund transactions from booking engines that send negative purchase values.
+A Google Tag Manager variable template for both web and server containers that converts negative numbers to positive (absolute value). Useful for handling refund transactions from booking engines that send negative purchase values.
 
 ## Overview
 
@@ -8,7 +8,7 @@ Some booking engines and e-commerce platforms cannot push a proper `refund` data
 
 ## Installation
 
-1. In your server-side GTM container, go to **Templates** → **Variable Templates** → **Search Gallery**
+1. In your GTM container (web or server-side), go to **Templates** → **Variable Templates** → **Search Gallery**
 2. Search for "Absolute Value"
 3. Click **Add to workspace**
 
@@ -65,6 +65,12 @@ transaction_id: ABC123
 ## Why This Matters
 
 GA4 expects refund values to be **positive numbers**. If you send a negative value to GA4's refund event, it won't be processed correctly. This template ensures your refund values are always positive.
+
+## Compatibility
+
+This template works in both:
+- **Web GTM** containers
+- **Server-side GTM** containers
 
 ## Author
 
