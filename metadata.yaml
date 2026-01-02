@@ -1,5 +1,5 @@
 homepage: "https://github.com/metryxstudio/absolute-value"
 documentation: "https://github.com/metryxstudio/absolute-value#readme"
 versions:
-  - sha: # Add your commit SHA after pushing to GitHub
+  - sha: 7bfb8eeea7537db281f5a60385de797cd08ff6d6
     changeNotes: "Initial release"
